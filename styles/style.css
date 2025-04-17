@@ -4,6 +4,12 @@ body {
     font-family: sans-serif;
 }
 
+.headersContainer {
+    display: flex;
+    grid-gap: 10px;
+    flex-direction: column;
+}
+
 header {
     padding: 40px;
     background: white;
@@ -27,3 +33,7 @@ a {
     display: flex;
     grid-gap: 35px;
 }
+
+/* .logoMiddleHeader {
+    ;
+} */
