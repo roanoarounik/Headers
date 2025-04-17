@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    background: black;
+    font-family: sans-serif;
+}
+
+header {
+    padding: 40px;
+    background: white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.headerInner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerStart a {
+    font-weight: 900;
+}
+
+.menu {
+    display: flex;
+    grid-gap: 35px;
+}
