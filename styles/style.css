@@ -22,7 +22,13 @@ a {
 
 .headerInner {
     display: flex;
+    grid-gap: 20px;
+    align-items: center;
     justify-content: space-between;
+}
+
+.huggingLogoMiddle .headerInner {
+    justify-content: center;
 }
 
 .headerStart a {
@@ -34,6 +40,7 @@ a {
     grid-gap: 35px;
 }
 
-/* .logoMiddleHeader {
-    ;
-} */
+.newHeaderv1 {
+    filter: invert(1);
+    font-family: inherit;
+}
