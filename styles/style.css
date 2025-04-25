@@ -1,7 +1,59 @@
+:root {
+    --lightBG: #2b2a29;
+    --leagueRed: #eb0029;
+    --transition: 0.3s ease-in-out;
+    --offwhite: rgba(249, 249, 249, 1);
+    --leagueYellow: rgba(200, 170, 110, 1);
+}
+
 body {
     margin: 0;
     background: black;
     font-family: sans-serif;
+}
+
+.w100 {
+    width: 100%
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.gap5 {
+    grid-gap: 5px;
+}
+.gap7 {
+    grid-gap: 7px;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.lightMode header {
+    background: white;
+    transition: var(--transition);
+}
+
+.lightMode a {
+    color: #111;
+    transition: var(--transition);
+}
+
+.lightMode .riotGamesLogo path {
+    fill: black;
+    transition: var(--transition);
+}
+
+.lightMode .globeIcon svg path {
+    fill: black;
+    transition: var(--transition);
+}
+
+.league_l {
+    max-height: 25px;
 }
 
 .headersContainer {
@@ -11,31 +63,77 @@ body {
 }
 
 header {
-    padding: 15px;
+    padding: 12px 10px 9px;
+}
+
+.leagueHeader {
+    background: #111;
+}
+
+.logoMiddleHeader {
     background: white;
 }
 
-a {
+.logoMiddleHeader a {
+    color: black;
+}
+
+a, button {
+    cursor: pointer;
+    font-family: arial;
     text-align: center;
-    line-height: 16px;
+    line-height: 17px;
     position: relative;
     z-index: 0;
     text-overflow: ellipsis;
     border-radius: 12px;
     padding: 8px 16px;
-    color: #111;
+    color: var(--offwhite);
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    transition: var(--transition);
 }
 
-a:has(.dropDownArrow) {
+a:has(.extraIcon) {
     display: flex;
     grid-gap: 5px;
     align-items: center;
 }
 
+.menu a:hover, .menu button:hover {
+    color: var(--leagueYellow);
+    background: var(--lightBG);
+}
+
+.riotGamesLogo {
+    max-height: 21px;
+    transition: var(--transition);
+}
+
+.riotGamesLogo path {
+    fill: var(--offwhite);
+    transition: var(--transition);
+}
+
+.riotGamesLogo:hover path {
+    fill: var(--leagueRed);
+}
+
+.globeIcon {
+    transition: var(--transition);
+    padding: 5px 5px 0px 5px !important;
+}
+
+.globeIcon:hover {
+    background: var(--lightBG);
+}
+
 .headerInner {
     display: flex;
-    grid-gap: 20px;
+    grid-gap: 5px;
     align-items: center;
     justify-content: space-between;
 }
@@ -56,7 +154,7 @@ a:has(.dropDownArrow) {
 
 .menu {
     display: flex;
-    grid-gap: 15px;
+    grid-gap: 5px;
 }
 
 .newHeaderv1 {
@@ -64,6 +162,43 @@ a:has(.dropDownArrow) {
     font-family: inherit;
 }
 
+.headerEndEnd {
+    padding-right: 23px;
+    display: flex;
+    grid-gap: 15px;
+    align-items: center;
+}
+
+.headerEndEnd .iconLink {
+    padding: 0;
+    max-height: 39px;
+}
+
+.magnifyingGlassIcon {
+    padding: 10px;
+    border-radius: 14px;
+    background: var(--lightBG);
+}
+
+.magnifyingGlassIcon path {
+    fill: var(--offwhite);
+}
+
 .playNowButton {
-    background: rgb(11, 196, 226);
+    color: #111;
+    font-size: 11.4px;
+    padding: 6px 14px;
+    transition: var(--transition);
+    background: rgba(11, 196, 226, 1);
+}
+
+.playNowButton:hover {
+    color: var(--offwhite);
+}
+
+.themeModeButton {
+    border: none;
+    outline: none;
+    color: var(--offwhite);
+    background: var(--lightBG);
 }
